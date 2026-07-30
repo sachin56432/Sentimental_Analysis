@@ -15,3 +15,34 @@ this talk, we will start with the discussion of the mainstream sentiment analysi
 then move on to describe some recent work on modelling comments, discussions and 
 debates, which give an overview of a whole different kind of analysis of sentiments and 
 opinions</p>
+
+ML pipeline: data preprocessing → feature engineering → handling imbalance → model training → evaluation → interpretation.
+
+NLTK provides
+
+Tokenization
+Stopword removal
+Lemmatization
+POS tagging
+SentiWordNet
+
+What is TF-IDF?
+
+TF-IDF converts text into numbers.
+TF = frequency of a word in one document.
+IDF = importance of that word across all documents.
+Common words get lower weight.
+Rare but informative words get higher weight.
+
+Why use both unigrams and bigrams?
+To capture both individual words and short phrases, improving context understanding.
+
+Why was class imbalance a problem?
+
+Example
+
+Positive
+18000 reviews
+Negative
+4000 reviews
+A model could predict everything as positive and still achieve high accuracy, so imbalance must be addressed.
