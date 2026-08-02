@@ -9,8 +9,10 @@ from nltk.stem import WordNetLemmatizer
 
 # Download NLTK data (runs only once)
 nltk.download("punkt")
+nltk.download("punkt_tab")
 nltk.download("stopwords")
 nltk.download("wordnet")
+nltk.download("omw-1.4")
 
 # Load saved model and vectorizer
 model = joblib.load("sentiment_model.pkl")
