@@ -44,7 +44,7 @@ if st.button("Predict"):
 
     prediction = model.predict(vector)
 
-    if prediction[0] == "0" or prediction[0] == 0:
+    if prediction[0] == "1" or prediction[0] == 1:
         st.success("😊 Positive Review")
     else:
         st.error("😞 Negative Review")
